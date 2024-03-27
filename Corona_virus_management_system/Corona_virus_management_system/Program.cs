@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Corona_virus_management_system.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<Corona_virus_management_systemContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Corona_virus_management_systemContext") ?? throw new InvalidOperationException("Connection string 'Corona_virus_management_systemContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

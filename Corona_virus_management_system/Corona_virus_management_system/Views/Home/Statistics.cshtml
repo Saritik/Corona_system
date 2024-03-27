@@ -1,0 +1,41 @@
+﻿@model dynamic
+
+@{
+    ViewData["Title"] = "Statistics";
+}
+
+<h1>Statistics</h1>
+
+<div>
+    <canvas id="myChart" width="250" height="250"></canvas>
+</div>
+
+<h3>Total Number of Members Not Vaccinated at All: @ViewBag.NotVaccinatedMembers</h3>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.labels)),
+                datasets: [{
+                    label: 'Illness Statistics',
+                    data: @Html.Raw(Json.Serialize(Model.datasets[0].data)),
+                    backgroundColor: @Html.Raw(Json.Serialize(Model.datasets[0].backgroundColor)),
+                    borderColor: @Html.Raw(Json.Serialize(Model.datasets[0].borderColor)),
+                    borderWidth: @Html.Raw(Json.Serialize(Model.datasets[0].borderWidth))
+                        }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+}
+
