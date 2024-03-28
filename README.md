@@ -1,4 +1,3 @@
-![image](https://github.com/Saritik/Corona_system/assets/116844169/e7c1fddd-f309-4728-a048-3872c5532ac9)# Corona_system
 Corona virus management system for Health Insurance Fund
 
 needs to do the migrations to open the sql tables:
