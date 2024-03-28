@@ -25,7 +25,7 @@ The list is updated after the addition to the list
 ![The list is updated after the addition to the list](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20150334.png)
 
 We will edit the new registrant and add the vaccinations he needs to perform and we will see the actions on the vaccinations
-![We will edit the new registrant and add the vaccinations he needs to perform and we will see the actions on the vaccinations](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20150503.png)
+![We will edit the new registrant and add the vaccinations he needs to perform and we will see the actions on the vaccinations](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20150442.png)
 ![We will edit the new registrant and add the vaccinations he needs to perform and we will see the actions on the vaccinations](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20150503.png)
 
 His vaccination list is currently empty
