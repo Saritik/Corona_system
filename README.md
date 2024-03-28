@@ -14,8 +14,7 @@ accessing a graph that illustrates the daily count of sick individuals over the 
 viewing a list of members registered in the health insurance fund or 
 accessing a graph that illustrates the daily count of sick individuals over the past month.](https://github.com/Saritik/Corona_system/assets/116844169/e7c1fddd-f309-4728-a048-3872c5532ac9)
 
-![From there we can navigate to the list of members registered in the system]
-(https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20145752.png)
+![From there we can navigate to the list of members registered in the system](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20145752.png)
 
 ![After entering the list, we will try to add a new HMO member to the list]
 (.\wwwroot\images\צילום מסך 2024-03-28 150245.png)
