@@ -4,7 +4,9 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<div style="margin-top: 20px; text-align: center;">
+    <h1 style="font-weight:bold">Edit Vaccine</h1>
+</div>
 
 <h4>Vaccine</h4>
 <hr />
@@ -24,15 +26,16 @@
                 <input asp-for="Manufacturer" class="form-control" />
                 <span asp-validation-for="Manufacturer" class="text-danger"></span>
             </div>
+            <div style="height: 2em;"></div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-outline-primary" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<div style="display: flex; justify-content: center;">
+    <a asp-action="Index" asp-route-memberId="@Model.MemberId" class="btn btn-link" style=" align-self: flex-start; margin-bottom: 10px; width: 300px; padding: 20px 40px; font-size: 24px;">Back to List</a>
 </div>
 
 @section Scripts {

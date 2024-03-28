@@ -111,6 +111,11 @@ namespace Corona_virus_management_system.Controllers
             {
                 try
                 {
+                    if (member.PositiveResult > member.RecoveryDate)
+                    {
+                        ModelState.AddModelError(string.Empty, "This date is not valid. You cannot recover until you test positive");
+                        return View(member);
+                    }
                     _context.Update(member);
                     await _context.SaveChangesAsync();
                 }

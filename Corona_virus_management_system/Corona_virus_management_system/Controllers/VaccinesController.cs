@@ -120,19 +120,30 @@ namespace Corona_virus_management_system.Controllers
 
             if (ModelState.IsValid)
             {
+                int myMemberId = vaccine.MemberId;
                 try
                 {
+                    var existingVaccine = await _context.Vaccine.FindAsync(id);
+                    if (existingVaccine == null)
+                    {
+                        return NotFound();
+                    }
+
+                    existingVaccine.Date = vaccine.Date;
+                    existingVaccine.Manufacturer = vaccine.Manufacturer;
+                    existingVaccine.MemberId = vaccine.MemberId;
+
                     var vaccinesForMember = _context.Vaccine.Where(v => v.MemberId == vaccine.MemberId).ToList();
 
                     foreach(var vac in vaccinesForMember)
                     {
-                        if (vac != null && vac.Date > vaccine.Date)
+                        if (vac != null && vac.Date < vaccine.Date && vac.ID > vaccine.ID)
                         {
                             ModelState.AddModelError(string.Empty, "This date is not valid because it cannot occur before the vaccination date before it.");
-                            return View(vaccine);
+                            return View(existingVaccine);
                         }
                     }
-                    _context.Update(vaccine);
+                    _context.Update(existingVaccine);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -146,7 +157,7 @@ namespace Corona_virus_management_system.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index), new { memberId = myMemberId });
             }
             return View(vaccine);
         }
@@ -179,13 +190,14 @@ namespace Corona_virus_management_system.Controllers
                 return Problem("Entity set 'Corona_virus_management_systemContext.Vaccine'  is null.");
             }
             var vaccine = await _context.Vaccine.FindAsync(id);
+            int myMemberId = vaccine.MemberId;
             if (vaccine != null)
             {
                 _context.Vaccine.Remove(vaccine);
             }
             
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index), new { memberId = myMemberId });
         }
 
         private bool VaccineExists(int id)

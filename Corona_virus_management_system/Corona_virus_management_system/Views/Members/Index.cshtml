@@ -4,92 +4,100 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="container" style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; height: 100vh; margin: 0; text-align: center;">
+    <div style="margin-bottom: 20px;">
+        <h1 style="font-weight:bold">Members</h1>
+    </div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LastName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Image)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Address)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.City)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.HouseNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BearthDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Phone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CellPhone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PositiveResult)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RecoveryDate)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                    <img src="@item.Image" alt="Member Image" style="max-width: 100px; max-height: 100px;" />
-           </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.City)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.HouseNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BearthDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Phone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CellPhone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PositiveResult)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RecoveryDate)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <div style="align-self: flex-start; margin-bottom: 10px;">
+        <a class="btn btn-primary" asp-action="Create">Create New</a>
+    </div>
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr class="table-dark">
+                    <th>
+                        @Html.DisplayNameFor(model => model.FirstName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LastName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Image)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Address)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.City)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.HouseNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BearthDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Phone)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CellPhone)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PositiveResult)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.RecoveryDate)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FirstName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LastName)
+                        </td>
+                        <td>
+                            <img src="@item.Image" alt="Member Image" style="max-width: 100px; max-height: 100px;" />
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Address)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.City)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HouseNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BearthDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Phone)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CellPhone)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PositiveResult)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RecoveryDate)
+                        </td>
+                        <td>
+                            <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@item.ID">Edit</a> 
+                            <a class="btn btn-primary btn-sm" asp-action="Details" asp-route-id="@item.ID">Details</a> 
+                            <a class="btn btn-primary btn-sm" asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -4,13 +4,19 @@
     ViewData["Title"] = "Statistics";
 }
 
-<h1>Statistics</h1>
+<body style="display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; margin: 0;">
+    <div style="margin-top: 20px; text-align: center;">
+        <h1 style="font-weight:bold">Sick in the last month</h1>
+    </div>
+    <h3>Total Number of Members Not Vaccinated at All: @ViewBag.NotVaccinatedMembers</h3>
 
-<div>
-    <canvas id="myChart" width="250" height="250"></canvas>
-</div>
+    <div>
+        <canvas id="myChart" width="200" height="200"></canvas>
+    </div>
+    <div style="height: 3em;"></div>
+</body>
 
-<h3>Total Number of Members Not Vaccinated at All: @ViewBag.NotVaccinatedMembers</h3>
+
 
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -21,7 +27,7 @@
             data: {
                 labels: @Html.Raw(Json.Serialize(Model.labels)),
                 datasets: [{
-                    label: 'Illness Statistics',
+                    label: 'Sick this month',
                     data: @Html.Raw(Json.Serialize(Model.datasets[0].data)),
                     backgroundColor: @Html.Raw(Json.Serialize(Model.datasets[0].backgroundColor)),
                     borderColor: @Html.Raw(Json.Serialize(Model.datasets[0].borderColor)),
