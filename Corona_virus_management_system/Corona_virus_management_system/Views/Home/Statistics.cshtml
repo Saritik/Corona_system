@@ -26,14 +26,8 @@
             type: 'bar',
             data: {
                 labels: @Html.Raw(Json.Serialize(Model.labels)),
-                datasets: [{
-                    label: 'Sick this month',
-                    data: @Html.Raw(Json.Serialize(Model.datasets[0].data)),
-                    backgroundColor: @Html.Raw(Json.Serialize(Model.datasets[0].backgroundColor)),
-                    borderColor: @Html.Raw(Json.Serialize(Model.datasets[0].borderColor)),
-                    borderWidth: @Html.Raw(Json.Serialize(Model.datasets[0].borderWidth))
-                        }]
-            },
+                datasets: @Html.Raw(Json.Serialize(Model.datasets))
+                    },
             options: {
                 scales: {
                     y: {
