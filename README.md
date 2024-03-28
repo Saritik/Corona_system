@@ -15,39 +15,41 @@ viewing a list of members registered in the health insurance fund or
 accessing a graph that illustrates the daily count of sick individuals over the past month.](https://github.com/Saritik/Corona_system/assets/116844169/e7c1fddd-f309-4728-a048-3872c5532ac9)
 
 From there we can navigate to the list of members registered in the system
-![From there we can navigate to the list of members registered in the system](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20145752.png)
+![From there we can navigate to the list of members registered in the system](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20145850.png)
 
-![After entering the list, we will try to add a new HMO member to the list]
-(.\wwwroot\images\צילום מסך 2024-03-28 150245.png)
-(.\wwwroot\images\צילום מסך 2024-03-28 150306.png)
+After entering the list, we will try to add a new HMO member to the list
+![After entering the list, we will try to add a new HMO member to the list](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20150245.png)
+![After entering the list, we will try to add a new HMO member to the list](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20150306.png)
 
-![The list is updated after the addition to the list]
-(.\wwwroot\images\צילום מסך 2024-03-28 150334.png)
+The list is updated after the addition to the list
+![The list is updated after the addition to the list](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20150334.png)
 
-![We will edit the new registrant and add the vaccinations he needs to perform and we will see the actions on the vaccinations]
-(.\wwwroot\images\צילום מסך 2024-03-28 150442.png)
-(.\wwwroot\images\צילום מסך 2024-03-28 150503.png)
+We will edit the new registrant and add the vaccinations he needs to perform and we will see the actions on the vaccinations
+![We will edit the new registrant and add the vaccinations he needs to perform and we will see the actions on the vaccinations](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20150503.png)
+![We will edit the new registrant and add the vaccinations he needs to perform and we will see the actions on the vaccinations](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20150503.png)
 
-![His vaccination list is currently empty]
-(.\wwwroot\images\צילום מסך 2024-03-28 151121.png)
+His vaccination list is currently empty
+![His vaccination list is currently empty](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20151121.png)
 
-![We will add a vaccine to the list of vaccines ]
-(.\wwwroot\images\צילום מסך 2024-03-28 151217.png)
+We will add a vaccine to the list of vaccines
+![We will add a vaccine to the list of vaccines ](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20151217.png)
 
-![And our table has been updated and shows us the additional vaccine]
-(.\wwwroot\images\צילום מסך 2024-03-28 151250.png)
+And our table has been updated and shows us the additional vaccine
+![And our table has been updated and shows us the additional vaccine](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20151250.png)
 
-![We can edit the vaccine and see the update afterwards in the table (we changed the manufacturer's name)]
-(.\wwwroot\images\צילום מסך 2024-03-28 151552.png)
-(.\wwwroot\images\צילום מסך 2024-03-28 151724.png)
+We can edit the vaccine and see the update afterwards in the table (we changed the manufacturer's name)
+![We can edit the vaccine and see the update afterwards in the table (we changed the manufacturer's name)](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20151724.png)
+![We can edit the vaccine and see the update afterwards in the table (we changed the manufacturer's name)](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20151724.png)
 
-![We can view the vaccine details by clicking on the details button]
-(.\wwwroot\images\צילום מסך 2024-03-28 151746.png)
+We can view the vaccine details by clicking on the details button
+![We can view the vaccine details by clicking on the details button](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20151746.png)
 
+We will try to create another vaccine whose date will take place before the existing vaccine and we can see that the system will not allow this 
+because there is an order for receiving the vaccines
 ![We will try to create another vaccine whose date will take place before the existing vaccine and we can see that the system will not allow this 
-because there is an order for receiving the vaccines]
-(.\wwwroot\images\צילום מסך 2024-03-28 151838.png)
+because there is an order for receiving the vaccines](https://github.com/Saritik/Corona_system/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-03-28%20151746.png)
 
+We added 3 more vaccines so that we reached 4 vaccines for the same member
 ![We added 3 more vaccines so that we reached 4 vaccines for the same member ]
 (.\wwwroot\images\צילום מסך 2024-03-28 152325.png)
 
