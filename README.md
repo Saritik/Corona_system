@@ -7,8 +7,11 @@ needs to do the migrations to open the sql tables:
 
 How to use the system:
 
-![Upon entering the system, users are directed to the home page where they can choose between two options: 
+Upon entering the system, users are directed to the home page where they can choose between two options: 
 viewing a list of members registered in the health insurance fund or 
-accessing a graph that illustrates the daily count of sick individuals over the past month.](.\wwwroot\images\צילום מסך 2024-03-28 145752.png)
+accessing a graph that illustrates the daily count of sick individuals over the past month.
+
+.\wwwroot\images\צילום מסך 2024-03-28 145752.png
+
 
 
